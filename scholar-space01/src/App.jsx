@@ -1,7 +1,10 @@
+//import { DynamicHeader } from "./component/DynamicHeader";
+import Home from "./pages/Home";
+
 function App() {
   return (
     <div>
-      <h1>Hello This is Mahi</h1>
+      <Home />
     </div>
   );
 }
