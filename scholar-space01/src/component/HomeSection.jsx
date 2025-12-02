@@ -53,9 +53,9 @@ const itemVariants = {
 export const SummerSchoolSection = () => {
   return (
     <motion.section
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 1, y: 0 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
+      viewport={{ once: true, amount: 0.05 }}
       transition={{ duration: 0.9, ease: "easeOut" }}
       className="py-24 px-4  bg-linear-to-br from-blue-50 via-indigo-50 to-purple-50 text-neutral-900 border-b border-blue-200/50 relative overflow-hidden"
     >

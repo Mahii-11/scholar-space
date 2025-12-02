@@ -153,16 +153,13 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <motion.div
+      <motion.div
         initial={{ opacity: 1, y: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.05 }}
         transition={{ duration: 1, ease: "easeOut" }}
         className="relative bg-white w-full rounded-t-3xl shadow-[0_-50px_100px_rgba(0,0,0,0.3)] pb-32 -mt-20 md:-mt-12 z-40"
       >
-      </motion.div>  */}
-
-      <div>
         <div id="hero">
           <SummerSchoolSection />
           <ProgramHighlightsSection />
@@ -207,7 +204,7 @@ export default function Home() {
           <ContactSection />
         </div>
         <FooterSection />
-      </div>
+      </motion.div>
 
       <div className="fixed bottom-6 md:bottom-8 left-0 right-0 flex justify-center z-50 px-4 pointer-events-none">
         <div className="pointer-events-auto">
