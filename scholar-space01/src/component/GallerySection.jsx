@@ -17,85 +17,73 @@ export const GallerySection = () => {
   const galleryImages = [
     {
       id: 1,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image1.jpg",
       title: "Academic Conference",
       category: "Events",
     },
     {
       id: 2,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image2.jpg",
       title: "Research Meeting",
       category: "Research",
     },
     {
       id: 3,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image3.jpg",
       title: "Workshop Session",
       category: "Workshop",
     },
     {
       id: 4,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image4.jpg",
       title: "Team Collaboration",
       category: "Team",
     },
     {
       id: 5,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image5.jpg",
       title: "Professional Discussion",
       category: "Meeting",
     },
     {
       id: 6,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image6.jpg",
       title: "Office Portrait",
       category: "Professional",
     },
     {
       id: 7,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image7.jpg",
       title: "Certificate Presentation",
       category: "Achievement",
     },
     {
       id: 8,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image8.jpg",
       title: "Academic Document",
       category: "Document",
     },
     {
       id: 9,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image9.jpg",
       title: "International Visit",
       category: "Travel",
     },
     {
       id: 10,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image10.jpg",
       title: "Landmark Photo",
       category: "International",
     },
     {
       id: 11,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image11.jpg",
       title: "Cultural Site Visit",
       category: "Cultural",
     },
     {
       id: 12,
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+      image: "scholar-images/image12.jpg",
       title: "Global Conference",
       category: "International",
     },

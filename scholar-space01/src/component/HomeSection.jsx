@@ -12,7 +12,7 @@ import {
   Zap,
   Play,
 } from "lucide-react";
-import heroImage from "../assets/hero_image.webp";
+import heroImage from "../assets/image1.png";
 
 const getFlagEmoji = (code) => {
   const flags = {

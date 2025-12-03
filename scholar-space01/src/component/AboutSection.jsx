@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { Building2, Globe, Lightbulb, Award } from "lucide-react";
+import image2 from "../assets/image2.jpg";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -158,7 +159,7 @@ const AboutSection = () => {
             >
               <div className="relative h-72 md:h-80 rounded-2xl overflow-hidden shadow-xl group">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop"
+                  src={image2}
                   alt="Dr. Sazzad Hossain"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
