@@ -1,20 +1,18 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
-import { href } from "react-router";
-import { Link } from "wouter";
 
 export const FooterSection = () => {
   const quickLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "#/about" },
-    { name: "Projects", href: "/#projects" },
-    { name: "Skills", href: "/#skills" },
-    { name: "Teaching", href: "/#teaching" },
-    { name: "Publications", href: "/#publications" },
-    { name: "Student Resources", href: "/#resources" },
-    { name: "Gallery", href: "/#gallery" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Home", href: "#top" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
+    { name: "Teaching", href: "#teaching" },
+    { name: "Publications", href: "#publications" },
+    { name: "Student Resources", href: "#resources" },
+    { name: "Gallery", href: "#gallery" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -59,19 +57,17 @@ export const FooterSection = () => {
             </h4>
             <div className="grid grid-cols-3 gap-4 md:gap-6">
               {quickLinks.map((link, i) => (
-                <motion.div
+                <motion.a
                   key={i}
+                  href={link.href}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.03 }}
+                  className="text-sm md:text-base text-neutral-600 hover:text-blue-600 transition-colors font-medium cursor-pointer"
                 >
-                  <Link href={link.href}>
-                    <a className="text-sm md:text-base text-neutral-600 hover:text-blue-600 transition-colors font-medium">
-                      {link.name}
-                    </a>
-                  </Link>
-                </motion.div>
+                  {link.name}
+                </motion.a>
               ))}
             </div>
           </motion.div>

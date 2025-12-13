@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 import {
   Calendar,
   MapPin,
@@ -120,10 +121,12 @@ export const SummerSchoolSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer">
-                View Full Details
-                <ArrowRight className="w-4 h-4" />
-              </button>
+              <Link to={"/event"}>
+                <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer">
+                  View Full Details
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </Link>
               <button className="px-6 py-3 bg-white border border-neutral-200 hover:bg-neutral-50 text-neutral-900 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer">
                 Register Interest
                 <ExternalLink className="w-4 h-4" />
