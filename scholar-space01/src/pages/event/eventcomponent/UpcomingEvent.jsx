@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import eventImage from "../../../assets/image2.jpg";
 import { Calendar, MapPin, ArrowRight } from "lucide-react";
 export const UpcomingEvent = () => {
@@ -42,10 +43,12 @@ export const UpcomingEvent = () => {
               https://www.tehi2025.uz/.
             </p>
 
-            <button className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all cursor-pointer">
-              View Details
-              <ArrowRight className="w-4 h-4" />
-            </button>
+            <Link to={"/Tehi 2025"}>
+              <button className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all cursor-pointer">
+                View Details
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </Link>
           </div>
 
           <div className="relative w-full md:w-80 shrink-0">

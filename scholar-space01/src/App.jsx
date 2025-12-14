@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Event from "./pages/event/Event";
 import EventOne from "./pages/event/EventOne";
 import EventThree from "./pages/event/EventThree";
+import Eventtwo from "./pages/event/Eventtwo";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
   {
     path: "/aboutevent",
     element: <EventOne />,
+  },
+
+  {
+    path: "/Tehi 2025",
+    element: <Eventtwo />,
   },
 
   {
