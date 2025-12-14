@@ -3,6 +3,8 @@ import ConferenceHero from "./eventcomponent/ConferenceHero";
 import Header from "./eventcomponent/Header";
 import { Globe } from "lucide-react";
 import AboutTEHI from "./eventcomponent/AboutTEHI";
+import ConferenceGallery from "./eventcomponent/ConferenceGallery";
+import { FooterSection } from "../../component/FooterSection";
 
 function Eventtwo() {
   return (
@@ -31,6 +33,8 @@ function Eventtwo() {
       </div>
       <ConferenceHero />
       <AboutTEHI />
+      <ConferenceGallery />
+      <FooterSection />
     </div>
   );
 }
