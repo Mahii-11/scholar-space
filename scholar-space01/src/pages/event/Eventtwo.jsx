@@ -5,6 +5,10 @@ import { Globe } from "lucide-react";
 import AboutTEHI from "./eventcomponent/AboutTEHI";
 import ConferenceGallery from "./eventcomponent/ConferenceGallery";
 import { FooterSection } from "../../component/FooterSection";
+import ImportantDates from "./eventcomponent/ImportantDates";
+import FeaturedInMedia from "./eventcomponent/FeaturedInMedia";
+import ContactAndPartners from "./eventcomponent/ContactAndPartners";
+import ConferenceVideos from "./eventcomponent/ConferenceVideos";
 
 function Eventtwo() {
   return (
@@ -33,7 +37,11 @@ function Eventtwo() {
       </div>
       <ConferenceHero />
       <AboutTEHI />
+      <ImportantDates />
+      <ContactAndPartners />
       <ConferenceGallery />
+      <ConferenceVideos />
+      <FeaturedInMedia />
       <FooterSection />
     </div>
   );
