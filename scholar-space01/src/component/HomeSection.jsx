@@ -320,12 +320,16 @@ export const ProgramHighlightsSection = () => {
               collaboration.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <button className="px-6 py-2.5 bg-white text-blue-900 hover:bg-blue-50 rounded-lg font-semibold flex items-center justify-center gap-2 transition cursor-pointer">
-                Live Updates
-              </button>
-              <button className="px-6 py-2.5 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-lg font-semibold flex items-center justify-center gap-2 transition cursor-pointer">
-                View Photo Gallery
-              </button>
+              <Link to={"/aboutevent"}>
+                <button className="px-6 py-2.5 bg-white text-blue-900 hover:bg-blue-50 rounded-lg font-semibold flex items-center justify-center gap-2 transition cursor-pointer">
+                  Live Updates
+                </button>
+              </Link>
+              <Link to={"/"}>
+                <button className="px-6 py-2.5 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-lg font-semibold flex items-center justify-center gap-2 transition cursor-pointer">
+                  View Photo Gallery
+                </button>
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -440,10 +444,12 @@ export const ProgramHighlightsSection = () => {
               View the complete gallery, watch all keynote speeches, and
               discover more.
             </p>
-            <button className="px-8 py-3 bg-white text-blue-600 hover:bg-blue-50 rounded-lg font-semibold flex items-center justify-center gap-2 transition mx-auto cursor-pointer">
-              View Full Conference Page
-              <ArrowRight className="w-4 h-4" />
-            </button>
+            <Link to={"/Tehi 2025"}>
+              <button className="px-8 py-3 bg-white text-blue-600 hover:bg-blue-50 rounded-lg font-semibold flex items-center justify-center gap-2 transition mx-auto cursor-pointer">
+                View Full Conference Page
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </Link>
           </div>
         </motion.div>
       </div>

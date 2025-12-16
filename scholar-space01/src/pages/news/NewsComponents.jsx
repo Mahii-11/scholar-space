@@ -9,8 +9,118 @@ const fadeIn = {
   transition: { duration: 0.8, ease: "easeOut" },
 };
 
-export const NewsSection = () => {
+export const NewsComponents = () => {
   const news = [
+    {
+      date: "7/15/2025",
+      id: "40",
+      title:
+        "QuEra Demonstrates Magic State Distillation for Fault-Tolerant Quantum Computing",
+      desc: "QuEra has successfully demonstrated magic state distillation, a critical step towards building fault-tolerant quantum computers. [1]",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
+    {
+      date: "7/15/2025",
+      id: "41",
+      title:
+        "Researchers Demonstrate Quantum Algorithm for Protein Structure Prediction on Quantum Hardware",
+      desc: "A new quantum algorithm for protein structure prediction has been successfully demonstrated on quantum hardware, a breakthrough with significant implications fo...",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
+    {
+      date: "7/15/2025",
+      id: "42",
+      title:
+        "BDx Launches Quantum AI Testbed to Accelerate Southeast Asia Adoption",
+      desc: "BDx has launched a Quantum AI Testbed in Southeast Asia to provide businesses with access to quantum computing resources and accelerate the adoption of this technolog...",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
+
+    {
+      date: "7/15/2025",
+      id: "40",
+      title:
+        "QuEra Demonstrates Magic State Distillation for Fault-Tolerant Quantum Computing",
+      desc: "QuEra has successfully demonstrated magic state distillation, a critical step towards building fault-tolerant quantum computers. [1]",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
+    {
+      date: "7/15/2025",
+      id: "41",
+      title:
+        "Researchers Demonstrate Quantum Algorithm for Protein Structure Prediction on Quantum Hardware",
+      desc: "A new quantum algorithm for protein structure prediction has been successfully demonstrated on quantum hardware, a breakthrough with significant implications fo...",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
+    {
+      date: "7/15/2025",
+      id: "42",
+      title:
+        "BDx Launches Quantum AI Testbed to Accelerate Southeast Asia Adoption",
+      desc: "BDx has launched a Quantum AI Testbed in Southeast Asia to provide businesses with access to quantum computing resources and accelerate the adoption of this technolog...",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
+
+    {
+      date: "7/15/2025",
+      id: "40",
+      title:
+        "QuEra Demonstrates Magic State Distillation for Fault-Tolerant Quantum Computing",
+      desc: "QuEra has successfully demonstrated magic state distillation, a critical step towards building fault-tolerant quantum computers. [1]",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
+    {
+      date: "7/15/2025",
+      id: "41",
+      title:
+        "Researchers Demonstrate Quantum Algorithm for Protein Structure Prediction on Quantum Hardware",
+      desc: "A new quantum algorithm for protein structure prediction has been successfully demonstrated on quantum hardware, a breakthrough with significant implications fo...",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
+    {
+      date: "7/15/2025",
+      id: "42",
+      title:
+        "BDx Launches Quantum AI Testbed to Accelerate Southeast Asia Adoption",
+      desc: "BDx has launched a Quantum AI Testbed in Southeast Asia to provide businesses with access to quantum computing resources and accelerate the adoption of this technolog...",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
+    {
+      date: "7/15/2025",
+      id: "40",
+      title:
+        "QuEra Demonstrates Magic State Distillation for Fault-Tolerant Quantum Computing",
+      desc: "QuEra has successfully demonstrated magic state distillation, a critical step towards building fault-tolerant quantum computers. [1]",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
+    {
+      date: "7/15/2025",
+      id: "41",
+      title:
+        "Researchers Demonstrate Quantum Algorithm for Protein Structure Prediction on Quantum Hardware",
+      desc: "A new quantum algorithm for protein structure prediction has been successfully demonstrated on quantum hardware, a breakthrough with significant implications fo...",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
+    {
+      date: "7/15/2025",
+      id: "42",
+      title:
+        "BDx Launches Quantum AI Testbed to Accelerate Southeast Asia Adoption",
+      desc: "BDx has launched a Quantum AI Testbed in Southeast Asia to provide businesses with access to quantum computing resources and accelerate the adoption of this technolog...",
+      image: "/scholar-images/image6.jpg",
+      link: "/news",
+    },
     {
       date: "7/15/2025",
       id: "40",
@@ -40,13 +150,6 @@ export const NewsSection = () => {
     },
   ];
 
-  const featured = {
-    title: "National STEAM Olympiad Initiative",
-    desc: "Dr. Sazzad Hossain has been instrumental in promoting STEAM (Science, Technology, Engineering, Arts, and Mathematics) education in Bangladesh through the National STEAM Olympiad. This initiative aims to develop critical thinking, problem-solving abilities, and innovation skills among students, preparing them for the challenges of the Fourth Industrial Revolution.",
-    collab: "In collaboration with Bangladesh Innovation Forum (BIF)",
-    link: "/news",
-  };
-
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -63,11 +166,12 @@ export const NewsSection = () => {
         {/* Header */}
         <motion.div {...fadeIn} className="text-center mb-12 md:mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-neutral-900">
-            Latest <span className="text-blue-600">News</span> & Achievements
+            Latest <span className="text-blue-600">News</span>
           </h2>
+          <div className="w-20 h-1 bg-blue-600 mx-auto mt-4 rounded-full" />
           <p className="text-base md:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed">
-            Stay updated with Dr. Sazzad Hossain's recent activities,
-            achievements, and contributions to education and technology.
+            Stay updated with the latest news, achievements, and collaborations
+            of Professor Dr. Sazzad Hossain.
           </p>
         </motion.div>
 
@@ -134,46 +238,6 @@ export const NewsSection = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Featured Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="bg-linear-to-r from-blue-50 to-slate-50 rounded-2xl p-8 md:p-10 border border-blue-100/50"
-        >
-          <div className="flex items-start gap-6">
-            {/* Icon */}
-            <motion.div
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              className="w-16 h-16 md:w-20 md:h-20 bg-blue-600 rounded-full flex items-center justify-center shrink-0 shadow-lg"
-            >
-              <Users className="w-8 h-8 md:w-10 md:h-10 text-white" />
-            </motion.div>
-
-            {/* Content */}
-            <div className="flex-1">
-              <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-3">
-                {featured.title}
-              </h3>
-              <p className="text-neutral-700 leading-relaxed mb-4">
-                {featured.desc}
-              </p>
-              <p className="text-sm text-neutral-600 mb-5 flex items-center gap-2">
-                <span className="text-blue-600">👥</span>
-                {featured.collab}
-              </p>
-              <motion.a
-                href={featured.link}
-                whileHover={{ x: 5 }}
-                className="inline-block px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
-              >
-                Learn More
-              </motion.a>
-            </div>
-          </div>
         </motion.div>
       </div>
     </motion.section>

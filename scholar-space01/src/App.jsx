@@ -4,6 +4,7 @@ import Event from "./pages/event/Event";
 import EventOne from "./pages/event/EventOne";
 import EventThree from "./pages/event/EventThree";
 import Eventtwo from "./pages/event/Eventtwo";
+import NewsStore from "./pages/news/NewsStore";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
   {
     path: "/eventabout",
     element: <EventThree />,
+  },
+
+  {
+    path: "/news",
+    element: <NewsStore />,
   },
 ]);
 
